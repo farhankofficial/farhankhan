@@ -458,8 +458,7 @@
 
         // Function that includes the website branding link and referral info in WhatsApp message
         function openWhatsApp(customText) {
-            const currentWebsiteUrl = window.location.href;
-            const fullMessage = `${customText}\n\n[Referred from Website: ${currentWebsiteUrl}]`;
+            const fullMessage = `${customText}`;
             const encodedText = encodeURIComponent(fullMessage);
             window.open(`https://wa.me/923448958601?text=${encodedText}`, '_blank');
         }
